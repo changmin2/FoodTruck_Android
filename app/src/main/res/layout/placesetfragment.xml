@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/nowplace"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:text="현재위치로"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addresstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="설정하고 싶은 위치입력"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addressplace"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:text="해당주소로"
+        android:textStyle="bold" />
+</LinearLayout>

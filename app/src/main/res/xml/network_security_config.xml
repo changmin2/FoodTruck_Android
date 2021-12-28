@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
+
+
+<!--    출처: https://gun0912.tistory.com/80 [박상권의 삽질블로그]-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--    <network-security-config>-->
+<!--        <domain-config cleartextTrafficPermitted="true">-->
+<!--            <domain includeSubdomains="true">maps.daum-img.net</domain>-->
+<!--            <domain includeSubdomains="true">http://dlckdals56.dothome.co.kr/</domain>-->
+<!--        </domain-config>-->
+<!--</network-security-config>-->
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<network-security-config>-->
+<!--<base-config cleartextTrafficPermitted="true">-->
+<!--    <trust-anchors>-->
+<!--        <certificates src="system" />-->
+<!--    </trust-anchors>-->
+<!--</base-config>-->
+<!--</network-security-config>-->

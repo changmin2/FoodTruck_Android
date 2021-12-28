@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.navagation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+        android:name="org.techtown.navagation.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="org.techtown.navagation.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:name=".Data"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mainicon"
+        android:label="우리동네 푸드트럭"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_mainicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Navagation"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".BusinessIntoInform"
+            android:exported="false" />
+        <activity
+        android:name=".Loading"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:label="우리동네 푸드트럭"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".FoodTruckInfo"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="b8b60934c6b669a05a9dad9a29b6c547" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="우리동네 푸드트럭"
+            android:theme="@style/Theme.Navagation.NoActionBar">
+
+        </activity>
+<!--        <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+        <provider
+            android:name=".other.PersonProvider"
+            android:authorities="org.techtown.navagation"
+            android:exported="true"
+            android:readPermission="org.techtown.navagation.READ_DATABASE"
+            android:writePermission="org.techtown.navagation.WRITE_DATABASE" />
+    </application>
+
+</manifest>
